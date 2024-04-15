@@ -3,7 +3,7 @@
     <div class="card-content">
       {{ note.content }}
       <div class="has-text-right has-text-gray-light mt-2">
-        <small>XXX chars</small>
+        <small>{{ note.content.length }} </small>
       </div>
     </div>
     <footer class="card-footer">
