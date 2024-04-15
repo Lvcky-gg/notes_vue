@@ -25,7 +25,7 @@
     </div>
 
     <Note
-      v-for="note in notes"
+      v-for="note in notes.notes"
       :key="note.id"
       :note="note"
       @deleteClicked="deleteNote"
@@ -35,34 +35,20 @@
 
 <script setup>
 import { ref, toRaw } from 'vue'
+import { useStoreNotes } from '../stores/storeNotes'
 import Note from '../components/Notes/Note.vue'
+const notes = useStoreNotes()
 
 const newNote = ref('')
 const newNoteRef = ref(null)
-const notes = ref([
-  {
-    id: 1,
-    content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam totam ducimus! Dolorem doloremque nesciunt error. Animi fugit maiores numquam ducimus tenetur aut eos repudiandae! Adipisci voluptatibus laboriosam harum totam?'
-  },
-  {
-    id: 2,
-    content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam totam ducimus! Dolorem doloremque nesciunt error. Animi fugit maiores numquam ducimus tenetur aut eos repudiandae! Adipisci voluptatibus laboriosam harum totam?'
-  },
-  {
-    id: 3,
-    content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam totam ducimus! Dolorem doloremque nesciunt error. Animi fugit maiores numquam ducimus tenetur aut eos repudiandae! Adipisci voluptatibus laboriosam harum totam?'
-  }
-])
 
 const addNote = () => {
-  let note = {
-    id: parseInt(toRaw(notes.value.length + 1)),
-    content: newNote.value
-  }
-  notes.value = [note, ...notes.value]
+  notes.addNote(newNote.value)
+  //   let note = {
+  //     id: parseInt(toRaw(notes.value.length + 1)),
+  //     content: newNote.value
+  //   }
+  //   notes.value = [note, ...notes.value]
   newNote.value = ''
   newNoteRef.value.focus()
 }

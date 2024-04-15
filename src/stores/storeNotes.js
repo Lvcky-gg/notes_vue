@@ -24,4 +24,13 @@ export const useStoreNotes = defineStore("storeNotes", {
       notes,
     };
   },
+  actions: {
+    addNote(value) {
+      let note = {
+        id: parseInt(this.notes.length + 1),
+        content: value,
+      };
+      this.notes = [note, ...this.notes];
+    },
+  },
 });
