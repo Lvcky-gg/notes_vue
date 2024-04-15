@@ -1,6 +1,4 @@
 <template>
-  <div class="notes"><h1>Notes</h1></div>
-
   <div class="card">
     <header class="card-header">
       <p class="card-header-title">Component</p>
