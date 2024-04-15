@@ -10,6 +10,7 @@
         <div class="control">
           <button
             @click="addNote"
+            :disabled="newNote === ''"
             class="button is-link has-background-success"
           >
             Add Note
