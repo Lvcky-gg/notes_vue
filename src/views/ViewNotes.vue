@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div v-for="note in notes" key="note.id" class="card mb-4">
+    <div v-for="note in notes" :key="note.id" class="card mb-4">
       <header class="card-header">
         <p class="card-header-title">Component</p>
         <button class="card-header-icon" aria-label="more options">
