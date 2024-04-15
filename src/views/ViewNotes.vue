@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div v-for="note in notes" class="card mb-4">
+    <div v-for="note in notes" key="note.id" class="card mb-4">
       <header class="card-header">
         <p class="card-header-title">Component</p>
         <button class="card-header-icon" aria-label="more options">
@@ -41,6 +41,16 @@ import { ref } from 'vue'
 const notes = ref([
   {
     id: 1,
+    content:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam totam ducimus! Dolorem doloremque nesciunt error. Animi fugit maiores numquam ducimus tenetur aut eos repudiandae! Adipisci voluptatibus laboriosam harum totam?'
+  },
+  {
+    id: 2,
+    content:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam totam ducimus! Dolorem doloremque nesciunt error. Animi fugit maiores numquam ducimus tenetur aut eos repudiandae! Adipisci voluptatibus laboriosam harum totam?'
+  },
+  {
+    id: 3,
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam totam ducimus! Dolorem doloremque nesciunt error. Animi fugit maiores numquam ducimus tenetur aut eos repudiandae! Adipisci voluptatibus laboriosam harum totam?'
   }
