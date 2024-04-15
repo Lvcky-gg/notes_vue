@@ -1,40 +1,15 @@
 <template>
   <div class="notes">
-    <div class="field">
-      <label class="label">Message</label>
-      <div class="control">
-        <textarea class="textarea" placeholder="Textarea"></textarea>
+    <div class="card has-background-success-dark p-4 mb-5">
+      <div class="field">
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
       </div>
-    </div>
-
-    <div class="field">
-      <div class="control">
-        <label class="checkbox">
-          <input type="checkbox" />
-          I agree to the <a href="#">terms and conditions</a>
-        </label>
-      </div>
-    </div>
-
-    <div class="field">
-      <div class="control">
-        <label class="radio">
-          <input type="radio" name="question" />
-          Yes
-        </label>
-        <label class="radio">
-          <input type="radio" name="question" />
-          No
-        </label>
-      </div>
-    </div>
-
-    <div class="field is-grouped">
-      <div class="control">
-        <button class="button is-link">Submit</button>
-      </div>
-      <div class="control">
-        <button class="button is-link is-light">Cancel</button>
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
       </div>
     </div>
 
