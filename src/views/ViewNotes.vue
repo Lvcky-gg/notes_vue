@@ -25,14 +25,6 @@
     </div>
 
     <div v-for="note in notes" :key="note.id" class="card mb-4">
-      <!-- <header class="card-header">
-        <p class="card-header-title">Component</p>
-        <button class="card-header-icon" aria-label="more options">
-          <span class="icon">
-            <i class="fas fa-angle-down" aria-hidden="true"></i>
-          </span>
-        </button>
-      </header> -->
       <div class="card-content">
         {{ note.content }}
       </div>
