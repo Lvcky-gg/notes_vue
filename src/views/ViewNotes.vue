@@ -48,7 +48,7 @@
 import { ref, toRaw } from 'vue'
 
 const newNote = ref('')
-
+const newNoteRef = ref(null)
 const notes = ref([
   {
     id: 1,
