@@ -40,7 +40,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, toRaw } from 'vue'
 
 const newNote = ref('')
 
@@ -63,6 +63,11 @@ const notes = ref([
 ])
 
 const addNote = () => {
-  console.log(newNote)
+  let note = {
+    id: parseInt(toRaw(notes.value.length + 1)),
+    content: newNote.value
+  }
+  notes.value = [note, ...notes.value]
+  newNote.value = ''
 }
 </script>
