@@ -41,5 +41,5 @@
 <script setup>
 import { ref } from 'vue'
 
-const notes = ref()
+const notes = ref([])
 </script>
