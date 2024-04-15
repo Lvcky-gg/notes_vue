@@ -2,6 +2,9 @@
   <div class="card mb-4">
     <div class="card-content">
       {{ note.content }}
+      <div class="has-text-right has-text-gray-light">
+        <small>XXX chars</small>
+      </div>
     </div>
     <footer class="card-footer">
       <a href="#" class="card-footer-item">Edit</a>
