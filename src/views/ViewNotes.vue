@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div v-for="i in 3" class="card mb-4">
+    <div v-for="note in notes" class="card mb-4">
       <header class="card-header">
         <p class="card-header-title">Component</p>
         <button class="card-header-icon" aria-label="more options">
@@ -25,10 +25,7 @@
         </button>
       </header>
       <div class="card-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam
-        totam ducimus! Dolorem doloremque nesciunt error. Animi fugit maiores
-        numquam ducimus tenetur aut eos repudiandae! Adipisci voluptatibus
-        laboriosam harum totam?
+        {{ note.content }}
       </div>
       <footer class="card-footer">
         <a href="#" class="card-footer-item">Edit</a>
