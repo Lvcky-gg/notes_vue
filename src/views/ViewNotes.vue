@@ -24,7 +24,9 @@
       </div>
     </div>
 
-    <div v-for="note in notes" :key="note.id" class="card mb-4">
+    <Note v-for="note in notes" :key="note.id" :note="note" />
+
+    <!-- <div v-for="note in notes" :key="note.id" class="card mb-4">
       <div class="card-content">
         {{ note.content }}
       </div>
@@ -32,12 +34,13 @@
         <a href="#" class="card-footer-item">Edit</a>
         <a href="#" class="card-footer-item">Delete</a>
       </footer>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script setup>
 import { ref, toRaw } from 'vue'
+import Note from '../components/Notes/Note.vue'
 
 const newNote = ref('')
 const newNoteRef = ref(null)
