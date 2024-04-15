@@ -41,5 +41,11 @@
 <script setup>
 import { ref } from 'vue'
 
-const notes = ref([])
+const notes = ref([
+  {
+    id: 1,
+    content:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam totam ducimus! Dolorem doloremque nesciunt error. Animi fugit maiores numquam ducimus tenetur aut eos repudiandae! Adipisci voluptatibus laboriosam harum totam?'
+  }
+])
 </script>
