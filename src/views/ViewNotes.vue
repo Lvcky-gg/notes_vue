@@ -8,7 +8,9 @@
       </div>
       <div class="field is-grouped is-grouped-right">
         <div class="control">
-          <button class="button is-link">Submit</button>
+          <button class="button is-link has-background-success">
+            Add Note
+          </button>
         </div>
       </div>
     </div>
