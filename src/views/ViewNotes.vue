@@ -3,7 +3,12 @@
     <div class="card has-background-success-dark p-4 mb-5">
       <div class="field">
         <div class="control">
-          <textarea v-model="newNote" class="textarea" placeholder="Add Note" />
+          <textarea
+            v-model="newNote"
+            class="textarea"
+            placeholder="Add Note"
+            ref="newNoteRef"
+          />
         </div>
       </div>
       <div class="field is-grouped is-grouped-right">
@@ -69,5 +74,6 @@ const addNote = () => {
   }
   notes.value = [note, ...notes.value]
   newNote.value = ''
+  newNoteRef.value.focus()
 }
 </script>
