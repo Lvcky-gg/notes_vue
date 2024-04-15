@@ -3,7 +3,7 @@
     <div class="card has-background-success-dark p-4 mb-5">
       <div class="field">
         <div class="control">
-          <textarea class="textarea" placeholder="Textarea"></textarea>
+          <textarea class="textarea" placeholder="Add Note" />
         </div>
       </div>
       <div class="field is-grouped is-grouped-right">
