@@ -3,7 +3,7 @@
     <div class="card-content">
       {{ note.content }}
       <div class="has-text-right has-text-gray-light mt-2">
-        <small>{{ characterLength }} characters</small>
+        <small>{{ characterLength }} </small>
       </div>
     </div>
     <footer class="card-footer">
@@ -24,6 +24,7 @@ const props = defineProps({
 })
 
 const characterLength = computed(() => {
-  return props.note.content.length
+  let description = props.note.content.length > 1 ? 'characters' : 'character'
+  return `${props.note.content.length} ${description}`
 })
 </script>
