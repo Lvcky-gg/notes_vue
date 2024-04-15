@@ -6,7 +6,7 @@
 
   <nav class="navbar is-success" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <div class="navbar-item is-size-4">Notes</div>
+      <div class="navbar-item is-size-4 is-family-monospace">Notes</div>
 
       <a
         role="button"
