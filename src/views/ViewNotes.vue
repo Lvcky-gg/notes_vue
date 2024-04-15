@@ -8,7 +8,10 @@
       </div>
       <div class="field is-grouped is-grouped-right">
         <div class="control">
-          <button class="button is-link has-background-success">
+          <button
+            @click="addNote"
+            class="button is-link has-background-success"
+          >
             Add Note
           </button>
         </div>
@@ -57,4 +60,8 @@ const notes = ref([
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam totam ducimus! Dolorem doloremque nesciunt error. Animi fugit maiores numquam ducimus tenetur aut eos repudiandae! Adipisci voluptatibus laboriosam harum totam?'
   }
 ])
+
+const addNote = () => {
+  console.log(newNote)
+}
 </script>
