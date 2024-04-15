@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" v-for="i in 3">
     <header class="card-header">
       <p class="card-header-title">Component</p>
       <button class="card-header-icon" aria-label="more options">
@@ -9,17 +9,12 @@
       </button>
     </header>
     <div class="card-content">
-      <div class="content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-        iaculis mauris.
-        <a href="#">@bulmaio</a>. <a href="#">#css</a>
-        <a href="#">#responsive</a>
-        <br />
-        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-      </div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam totam
+      ducimus! Dolorem doloremque nesciunt error. Animi fugit maiores numquam
+      ducimus tenetur aut eos repudiandae! Adipisci voluptatibus laboriosam
+      harum totam?
     </div>
     <footer class="card-footer">
-      <a href="#" class="card-footer-item">Save</a>
       <a href="#" class="card-footer-item">Edit</a>
       <a href="#" class="card-footer-item">Delete</a>
     </footer>
